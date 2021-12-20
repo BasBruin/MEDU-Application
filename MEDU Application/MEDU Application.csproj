@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C26AFCE7-7F35-4C4C-99D9-6972C00962CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MEDU_Application</RootNamespace>
+    <AssemblyName>MEDU Application</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agenda.Designer.cs">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dokter.cs" />
+    <Compile Include="Hamburger_Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hamburger_Help.Designer.cs">
+      <DependentUpon>Hamburger_Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hamburger_Instellingen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hamburger_Instellingen.Designer.cs">
+      <DependentUpon>Hamburger_Instellingen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hamburger_Medicijnenlijst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hamburger_Medicijnenlijst.Designer.cs">
+      <DependentUpon>Hamburger_Medicijnenlijst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inloggen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inloggen.Designer.cs">
+      <DependentUpon>Inloggen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patiënt.cs" />
+    <Compile Include="Vandaag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vandaag.Designer.cs">
+      <DependentUpon>Vandaag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hamburger_Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hamburger_Agenda.Designer.cs">
+      <DependentUpon>Hamburger_Agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hamburger_Vandaag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hamburger_Vandaag.Designer.cs">
+      <DependentUpon>Hamburger_Vandaag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instellingen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instellingen.Designer.cs">
+      <DependentUpon>Instellingen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicijnenlijst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicijnenlijst.Designer.cs">
+      <DependentUpon>Medicijnenlijst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hamburger_Help.resx">
+      <DependentUpon>Hamburger_Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hamburger_Instellingen.resx">
+      <DependentUpon>Hamburger_Instellingen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hamburger_Medicijnenlijst.resx">
+      <DependentUpon>Hamburger_Medicijnenlijst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inloggen.resx">
+      <DependentUpon>Inloggen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vandaag.resx">
+      <DependentUpon>Vandaag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hamburger_Agenda.resx">
+      <DependentUpon>Hamburger_Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hamburger_Vandaag.resx">
+      <DependentUpon>Hamburger_Vandaag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instellingen.resx">
+      <DependentUpon>Instellingen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicijnenlijst.resx">
+      <DependentUpon>Medicijnenlijst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MED-U Logo White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-hamburger-menu-icon-24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\800px-Hamburger_icon_white.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X_hamburger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Krosso_Hamburger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huis_ICON.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
