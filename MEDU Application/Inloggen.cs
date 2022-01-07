@@ -15,6 +15,8 @@ namespace MEDU_Application
 {
     public partial class Inloggen : Form
     {
+       // private Patient patient;
+
         public Inloggen()
         {
             InitializeComponent();
@@ -34,45 +36,33 @@ namespace MEDU_Application
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(username.Text == "")
+            if (username.Text != "" && password.Text != "")
             {
+                Patient patient = new Patient(username.Text, password.Text);
+                
+                Boolean success = patient.inloggen();
 
-            }
-
-            if (username.Text != "")
-            {
-                string connString = "datasource=127.0.0.1;port=3306;username=root;password=;database=sql_database;";
-                string query = string.Format("SELECT * FROM test_sql_server WHERE userName='{0}' AND passWord='{1}'", username.Text, password.Text);
-                MySqlConnection databaseConnection = new MySqlConnection(connString);
-                MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
-                cmd.CommandTimeout = 60;
-                databaseConnection.Open();
-
-                DataTable dt = new DataTable(); //this is creating a virtual table  
-                dt.Load(cmd.ExecuteReader());
-
-                try
+                if (success)
                 {
-                    if (dt.Rows.Count ==1)
-                    {
-                        this.Hide();
-                        Vandaag f1 = new Vandaag();
-                        f1.ShowDialog();
-                    }
+                    this.Hide();
+                    Vandaag f1 = new Vandaag();
+                    f1.ShowDialog();
+                    DataTable dt = DataTbl.GetValues(username.Text, password.Text);
+                    patient = new Patient(Convert.ToInt32(dt.Rows[0][0]), Convert.ToString(dt.Rows[0][3]), Convert.ToString(dt.Rows[0][4]), Convert.ToInt32(dt.Rows[0][5]), Convert.ToString(dt.Rows[0][6]), Convert.ToString(dt.Rows[0][7]), Convert.ToString(dt.Rows[0][8]), Convert.ToString(dt.Rows[0][9]), Convert.ToInt32(dt.Rows[0][10]));
                 }
-                catch (Exception)
+                else
                 {
                     MessageBox.Show("Verkeerd wachtwoord en/of gebruikersnaam");
                 }
-
+            }
+            else
+            {
+                MessageBox.Show("Vul bij beide textboxen iets in");
             }
 
 
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
     }
 }

@@ -55,6 +55,7 @@
     <Compile Include="Agenda.Designer.cs">
       <DependentUpon>Agenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataTbl.cs" />
     <Compile Include="Dokter.cs" />
     <Compile Include="Hamburger_Help.cs">
       <SubType>Form</SubType>
@@ -80,7 +81,7 @@
     <Compile Include="Inloggen.Designer.cs">
       <DependentUpon>Inloggen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patiënt.cs" />
+    <Compile Include="Patient.cs" />
     <Compile Include="Vandaag.cs">
       <SubType>Form</SubType>
     </Compile>

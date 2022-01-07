@@ -35,7 +35,7 @@ namespace MEDU_Application
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Help_Ham = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Inloggen_Ham = new System.Windows.Forms.Label();
+            this.Uitloggen_Ham = new System.Windows.Forms.Label();
             this.Instellingen_Ham = new System.Windows.Forms.Label();
             this.Vandaag_Ham = new System.Windows.Forms.Label();
             this.Medicijnen_Ham = new System.Windows.Forms.Label();
@@ -110,25 +110,25 @@ namespace MEDU_Application
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.Inloggen_Ham);
+            this.panel1.Controls.Add(this.Uitloggen_Ham);
             this.panel1.Location = new System.Drawing.Point(-7, 421);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(237, 58);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // Inloggen_Ham
+            // Uitloggen_Ham
             // 
-            this.Inloggen_Ham.AutoSize = true;
-            this.Inloggen_Ham.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Inloggen_Ham.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.Inloggen_Ham.ForeColor = System.Drawing.Color.White;
-            this.Inloggen_Ham.Location = new System.Drawing.Point(18, 12);
-            this.Inloggen_Ham.Name = "Inloggen_Ham";
-            this.Inloggen_Ham.Size = new System.Drawing.Size(117, 29);
-            this.Inloggen_Ham.TabIndex = 0;
-            this.Inloggen_Ham.Text = "Uitloggen";
-            this.Inloggen_Ham.Click += new System.EventHandler(this.Inloggen_Ham_Click);
+            this.Uitloggen_Ham.AutoSize = true;
+            this.Uitloggen_Ham.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Uitloggen_Ham.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.Uitloggen_Ham.ForeColor = System.Drawing.Color.White;
+            this.Uitloggen_Ham.Location = new System.Drawing.Point(18, 12);
+            this.Uitloggen_Ham.Name = "Uitloggen_Ham";
+            this.Uitloggen_Ham.Size = new System.Drawing.Size(117, 29);
+            this.Uitloggen_Ham.TabIndex = 0;
+            this.Uitloggen_Ham.Text = "Uitloggen";
+            this.Uitloggen_Ham.Click += new System.EventHandler(this.Inloggen_Ham_Click);
             // 
             // Instellingen_Ham
             // 
@@ -206,7 +206,7 @@ namespace MEDU_Application
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Help_Ham;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label Inloggen_Ham;
+        private System.Windows.Forms.Label Uitloggen_Ham;
         private System.Windows.Forms.Label Instellingen_Ham;
         private System.Windows.Forms.Label Vandaag_Ham;
         private System.Windows.Forms.Label Medicijnen_Ham;
