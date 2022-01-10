@@ -47,7 +47,7 @@ namespace MEDU_Application
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Hamburger_Vandaag f2 = new Hamburger_Vandaag(patient);
+            HamburgerMenu f2 = new HamburgerMenu(patient);
             f2.ShowDialog();
         }
 
@@ -96,7 +96,14 @@ namespace MEDU_Application
                     lbmedicineName.Text = reader.GetString("name"); //verandert de naam van de medicijn  label
                     lbdose.Text = reader.GetString("amount");  //verandert de naam van de dose label
                     lbwijzeInname.Text = reader.GetString("consumption_method");//verandert de naam van de inname wijze label
-                    cbIngenomen.Text = reader.GetString("is_consumed"); //verandert de naam van de checkbox
+                    if (reader.GetString("is_consumed") == "True") //verandert de naam van de checkbox
+                    {
+                        cbIngenomen.Text = "Ingenomen";
+                    }
+                    else
+                    {
+                        cbIngenomen.Text = "Niet ingenomen";
+                    }
                     cbIngenomen.Checked = reader.GetBoolean("is_consumed"); //vverandert de waarde van de checkbox
 
                 }
@@ -123,7 +130,14 @@ namespace MEDU_Application
                     lbmedicineName.Text = reader.GetString("name"); //verandert de naam van de medicijn  label
                     lbdose.Text = reader.GetString("amount");  //verandert de naam van de dose label
                     lbwijzeInname.Text = reader.GetString("consumption_method");//verandert de naam van de inname wijze label
-                    cbIngenomen.Text = reader.GetString("is_consumed"); //verandert de naam van de checkbox
+                    if (reader.GetString("is_consumed") == "True") //verandert de naam van de checkbox
+                    {
+                        cbIngenomen.Text = "Ingenomen";
+                    }
+                    else
+                    {
+                        cbIngenomen.Text = "Niet ingenomen";
+                    }
                     cbIngenomen.Checked = reader.GetBoolean("is_consumed"); //vverandert de waarde van de checkbox
 
                 }

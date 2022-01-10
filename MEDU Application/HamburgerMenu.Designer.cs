@@ -1,7 +1,7 @@
 ﻿
 namespace MEDU_Application
 {
-    partial class Hamburger_Vandaag
+    partial class HamburgerMenu
     {
         /// <summary>
         /// Required designer variable.

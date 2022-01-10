@@ -69,11 +69,11 @@
     <Compile Include="Vandaag.Designer.cs">
       <DependentUpon>Vandaag.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hamburger_Vandaag.cs">
+    <Compile Include="HamburgerMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hamburger_Vandaag.Designer.cs">
-      <DependentUpon>Hamburger_Vandaag.cs</DependentUpon>
+    <Compile Include="HamburgerMenu.Designer.cs">
+      <DependentUpon>HamburgerMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Help.cs">
       <SubType>Form</SubType>
@@ -104,8 +104,8 @@
     <EmbeddedResource Include="Vandaag.resx">
       <DependentUpon>Vandaag.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hamburger_Vandaag.resx">
-      <DependentUpon>Hamburger_Vandaag.cs</DependentUpon>
+    <EmbeddedResource Include="HamburgerMenu.resx">
+      <DependentUpon>HamburgerMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Help.resx">
       <DependentUpon>Help.cs</DependentUpon>

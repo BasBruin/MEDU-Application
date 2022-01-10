@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace MEDU_Application
 {
-    public partial class Hamburger_Vandaag : Form
+    public partial class HamburgerMenu : Form
     {
         Patient patient;
 
-        public Hamburger_Vandaag(Patient patient)
+        public HamburgerMenu(Patient patient)
         {
             InitializeComponent();
             this.patient = patient;

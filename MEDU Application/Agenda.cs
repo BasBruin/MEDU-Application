@@ -50,7 +50,7 @@ namespace MEDU_Application
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Hamburger_Vandaag f2 = new Hamburger_Vandaag(patient);
+            HamburgerMenu f2 = new HamburgerMenu(patient);
             f2.ShowDialog();
         }
 

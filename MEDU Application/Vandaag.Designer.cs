@@ -31,6 +31,11 @@ namespace MEDU_Application
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gbxIngenomen = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbwijzeInname = new System.Windows.Forms.Label();
+            this.lbdose = new System.Windows.Forms.Label();
             this.cbIngenomen = new System.Windows.Forms.CheckBox();
             this.lbmedicineName = new System.Windows.Forms.Label();
             this.lbxMedicijn = new System.Windows.Forms.ListBox();
@@ -39,11 +44,6 @@ namespace MEDU_Application
             this.navigatiebar = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbdose = new System.Windows.Forms.Label();
-            this.lbwijzeInname = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.gbxIngenomen.SuspendLayout();
             this.navigatiebar.SuspendLayout();
@@ -78,10 +78,57 @@ namespace MEDU_Application
             this.gbxIngenomen.TabIndex = 7;
             this.gbxIngenomen.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(0, 107);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 17);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Wijze Inname:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(0, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 17);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Inname Aantal:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(-3, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 17);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Medicijn:";
+            // 
+            // lbwijzeInname
+            // 
+            this.lbwijzeInname.AutoSize = true;
+            this.lbwijzeInname.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.lbwijzeInname.Location = new System.Drawing.Point(2, 124);
+            this.lbwijzeInname.Name = "lbwijzeInname";
+            this.lbwijzeInname.Size = new System.Drawing.Size(11, 15);
+            this.lbwijzeInname.TabIndex = 8;
+            this.lbwijzeInname.Text = "-";
+            // 
+            // lbdose
+            // 
+            this.lbdose.AutoSize = true;
+            this.lbdose.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.lbdose.Location = new System.Drawing.Point(2, 83);
+            this.lbdose.Name = "lbdose";
+            this.lbdose.Size = new System.Drawing.Size(11, 15);
+            this.lbdose.TabIndex = 7;
+            this.lbdose.Text = "-";
+            // 
             // cbIngenomen
             // 
             this.cbIngenomen.AutoSize = true;
-            this.cbIngenomen.Location = new System.Drawing.Point(11, 159);
+            this.cbIngenomen.Location = new System.Drawing.Point(0, 159);
             this.cbIngenomen.Name = "cbIngenomen";
             this.cbIngenomen.Size = new System.Drawing.Size(108, 21);
             this.cbIngenomen.TabIndex = 6;
@@ -161,53 +208,6 @@ namespace MEDU_Application
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // lbdose
-            // 
-            this.lbdose.AutoSize = true;
-            this.lbdose.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-            this.lbdose.Location = new System.Drawing.Point(2, 83);
-            this.lbdose.Name = "lbdose";
-            this.lbdose.Size = new System.Drawing.Size(11, 15);
-            this.lbdose.TabIndex = 7;
-            this.lbdose.Text = "-";
-            // 
-            // lbwijzeInname
-            // 
-            this.lbwijzeInname.AutoSize = true;
-            this.lbwijzeInname.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-            this.lbwijzeInname.Location = new System.Drawing.Point(2, 124);
-            this.lbwijzeInname.Name = "lbwijzeInname";
-            this.lbwijzeInname.Size = new System.Drawing.Size(11, 15);
-            this.lbwijzeInname.TabIndex = 8;
-            this.lbwijzeInname.Text = "-";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(-3, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 17);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Medicijn:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 17);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Inname Aantal:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(0, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 17);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Wijze Inname:";
             // 
             // Vandaag
             // 
