@@ -69,6 +69,11 @@ namespace MEDU_Application
             return false;
         }
 
+        public void Uitloggen(Patient patient)
+        {
+            patient = null;
+        }
+
         public override string ToString()
         {
             return this.Voornaam;

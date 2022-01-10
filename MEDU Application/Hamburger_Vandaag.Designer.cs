@@ -61,7 +61,7 @@ namespace MEDU_Application
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::MEDU_Application.Properties.Resources.Krosso_Hamburger;
+            this.pictureBox2.Image = global::MEDU_Application.Properties.Resources.Huis_ICON;
             this.pictureBox2.Location = new System.Drawing.Point(10, 28);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(45, 39);

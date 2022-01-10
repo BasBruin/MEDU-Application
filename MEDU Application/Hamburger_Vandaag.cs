@@ -32,6 +32,7 @@ namespace MEDU_Application
 
         private void label1_Click(object sender, EventArgs e)
         {
+            patient.Uitloggen(patient);
             this.Hide();
             Inloggen f10 = new Inloggen();
             f10.ShowDialog();
