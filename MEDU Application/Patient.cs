@@ -10,10 +10,9 @@ using MySql.Data.MySqlClient;
 
 namespace MEDU_Application
 {
-    class Patient
+    public class Patient
     {
         public DataTable dt { get; set; }
-        public Patient patient;
         public int Id { get; }
         public string Voornaam { get; }
         public string Achternaam { get; }
@@ -44,6 +43,19 @@ namespace MEDU_Application
         {
             this.Username = Username;
             this.Password = Password;
+        }
+
+        public Patient()
+        {
+            this.Id = Id;
+            this.Voornaam = Voornaam;
+            this.Achternaam = Achternaam;
+            this.Leeftijd = Leeftijd;
+            this.Email = Email;
+            this.Telefoonnummer = Telefoonnummer;
+            this.Dokter_id = Dokter_id;
+            this.Bsn = Bsn;
+            this.Allergiën = Allergiën;
         }
 
         public Boolean inloggen()

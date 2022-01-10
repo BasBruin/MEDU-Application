@@ -10,6 +10,8 @@ namespace MEDU_Application
 {
     class DataTbl
     {
+        string connString = "datasource=127.0.0.1;port=3306;username=root;password=;database=sql_database;";
+
         public static DataTable GetValues(string Username, string Password)
         {
             string connString = "datasource=127.0.0.1;port=3306;username=root;password=;database=sql_database;";
@@ -23,6 +25,19 @@ namespace MEDU_Application
             dt.Load(cmd.ExecuteReader());
 
             return dt;
+        }
+
+        public MySqlDataReader loadSQL(string query)
+        {
+
+            MySqlConnection databaseConnection = new MySqlConnection(connString);
+            MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+            cmd.CommandTimeout = 60;
+            MySqlDataReader reader;
+            databaseConnection.Open();
+            reader = cmd.ExecuteReader();
+            return (reader);
+
         }
     }
 }

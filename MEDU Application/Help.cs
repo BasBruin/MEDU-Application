@@ -12,9 +12,12 @@ namespace MEDU_Application
 {
     public partial class Help : Form
     {
-        public Help()
+        Patient patient;
+
+        public Help(Patient patient)
         {
             InitializeComponent();
+            this.patient = patient;
         }
 
         private void navigatiebar_Paint(object sender, PaintEventArgs e)
@@ -25,8 +28,8 @@ namespace MEDU_Application
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Hamburger_Help f9 = new Hamburger_Help();
-            f9.ShowDialog();
+            Hamburger_Vandaag f2 = new Hamburger_Vandaag(patient);
+            f2.ShowDialog();
         }
     }
 }

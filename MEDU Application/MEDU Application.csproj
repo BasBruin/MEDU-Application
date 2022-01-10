@@ -56,25 +56,6 @@
       <DependentUpon>Agenda.cs</DependentUpon>
     </Compile>
     <Compile Include="DataTbl.cs" />
-    <Compile Include="Dokter.cs" />
-    <Compile Include="Hamburger_Help.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hamburger_Help.Designer.cs">
-      <DependentUpon>Hamburger_Help.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Hamburger_Instellingen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hamburger_Instellingen.Designer.cs">
-      <DependentUpon>Hamburger_Instellingen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Hamburger_Medicijnenlijst.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hamburger_Medicijnenlijst.Designer.cs">
-      <DependentUpon>Hamburger_Medicijnenlijst.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inloggen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,12 +68,6 @@
     </Compile>
     <Compile Include="Vandaag.Designer.cs">
       <DependentUpon>Vandaag.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Hamburger_Agenda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hamburger_Agenda.Designer.cs">
-      <DependentUpon>Hamburger_Agenda.cs</DependentUpon>
     </Compile>
     <Compile Include="Hamburger_Vandaag.cs">
       <SubType>Form</SubType>
@@ -123,23 +98,11 @@
     <EmbeddedResource Include="Agenda.resx">
       <DependentUpon>Agenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hamburger_Help.resx">
-      <DependentUpon>Hamburger_Help.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Hamburger_Instellingen.resx">
-      <DependentUpon>Hamburger_Instellingen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Hamburger_Medicijnenlijst.resx">
-      <DependentUpon>Hamburger_Medicijnenlijst.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Inloggen.resx">
       <DependentUpon>Inloggen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vandaag.resx">
       <DependentUpon>Vandaag.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Hamburger_Agenda.resx">
-      <DependentUpon>Hamburger_Agenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hamburger_Vandaag.resx">
       <DependentUpon>Hamburger_Vandaag.cs</DependentUpon>

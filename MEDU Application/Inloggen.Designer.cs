@@ -53,6 +53,7 @@ namespace MEDU_Application
             this.navigatiebar.Name = "navigatiebar";
             this.navigatiebar.Size = new System.Drawing.Size(291, 484);
             this.navigatiebar.TabIndex = 4;
+            this.navigatiebar.Paint += new System.Windows.Forms.PaintEventHandler(this.navigatiebar_Paint);
             // 
             // tableLayoutPanel1
             // 
@@ -159,7 +160,6 @@ namespace MEDU_Application
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Inloggen";
             this.Text = "Inloggen";
-            this.Load += new System.EventHandler(this.Inloggen_Load);
             this.navigatiebar.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
