@@ -18,6 +18,7 @@ namespace MEDU_Application
         {
             InitializeComponent();
             this.patient = patient;
+            lblProfiel.Text = patient.ToString();
         }
 
         private void navigatiebar_Paint(object sender, PaintEventArgs e)

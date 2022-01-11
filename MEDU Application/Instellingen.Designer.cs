@@ -30,45 +30,33 @@ namespace MEDU_Application
         private void InitializeComponent()
         {
             this.navigatiebar = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblProfiel = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.navigatiebar.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // navigatiebar
             // 
             this.navigatiebar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.navigatiebar.Controls.Add(this.lblProfiel);
             this.navigatiebar.Controls.Add(this.pictureBox2);
+            this.navigatiebar.Controls.Add(this.pictureBox3);
             this.navigatiebar.Controls.Add(this.pictureBox1);
             this.navigatiebar.Location = new System.Drawing.Point(12, 12);
             this.navigatiebar.Name = "navigatiebar";
             this.navigatiebar.Size = new System.Drawing.Size(265, 92);
             this.navigatiebar.TabIndex = 4;
             this.navigatiebar.Paint += new System.Windows.Forms.PaintEventHandler(this.navigatiebar_Paint);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(265, 484);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 29);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Instellingen";
             // 
             // pictureBox2
             // 
@@ -92,6 +80,69 @@ namespace MEDU_Application
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(265, 484);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label1.Location = new System.Drawing.Point(89, 161);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 26);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Error";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label3.Location = new System.Drawing.Point(16, 298);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(233, 26);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Kon pagina niet vinden";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(70, 213);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 58);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "404";
+            // 
+            // lblProfiel
+            // 
+            this.lblProfiel.AutoSize = true;
+            this.lblProfiel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F);
+            this.lblProfiel.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblProfiel.Location = new System.Drawing.Point(198, 62);
+            this.lblProfiel.Name = "lblProfiel";
+            this.lblProfiel.Size = new System.Drawing.Size(48, 16);
+            this.lblProfiel.TabIndex = 13;
+            this.lblProfiel.Text = "poepo";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pictureBox3.Image = global::MEDU_Application.Properties.Resources.MED_U_user_wit;
+            this.pictureBox3.Location = new System.Drawing.Point(201, 20);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(47, 39);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
             // Instellingen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -102,10 +153,12 @@ namespace MEDU_Application
             this.Name = "Instellingen";
             this.Text = "Instellingen";
             this.navigatiebar.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.navigatiebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -117,5 +170,9 @@ namespace MEDU_Application
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblProfiel;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
