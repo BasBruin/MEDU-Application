@@ -103,6 +103,26 @@ namespace MEDU_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MED_U_user_blauw {
+            get {
+                object obj = ResourceManager.GetObject("MED-U-user-blauw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MED_U_user_wit {
+            get {
+                object obj = ResourceManager.GetObject("MED-U-user-wit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap white_hamburger_menu_icon_24 {
             get {
                 object obj = ResourceManager.GetObject("white-hamburger-menu-icon-24", resourceCulture);

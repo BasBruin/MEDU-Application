@@ -42,11 +42,14 @@ namespace MEDU_Application
             this.lbxTijd = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.navigatiebar = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblProfiel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.gbxIngenomen.SuspendLayout();
             this.navigatiebar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -179,6 +182,8 @@ namespace MEDU_Application
             // navigatiebar
             // 
             this.navigatiebar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.navigatiebar.Controls.Add(this.lblProfiel);
+            this.navigatiebar.Controls.Add(this.pictureBox3);
             this.navigatiebar.Controls.Add(this.pictureBox2);
             this.navigatiebar.Controls.Add(this.pictureBox1);
             this.navigatiebar.Location = new System.Drawing.Point(12, 12);
@@ -186,6 +191,17 @@ namespace MEDU_Application
             this.navigatiebar.Size = new System.Drawing.Size(265, 92);
             this.navigatiebar.TabIndex = 2;
             this.navigatiebar.Paint += new System.Windows.Forms.PaintEventHandler(this.navigatiebar_Paint);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pictureBox3.Image = global::MEDU_Application.Properties.Resources.MED_U_user_wit;
+            this.pictureBox3.Location = new System.Drawing.Point(194, 23);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(47, 39);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -202,12 +218,24 @@ namespace MEDU_Application
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MEDU_Application.Properties.Resources.MED_U_Logo_White;
-            this.pictureBox1.Location = new System.Drawing.Point(80, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(63, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(99, 53);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // lblProfiel
+            // 
+            this.lblProfiel.AutoSize = true;
+            this.lblProfiel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F);
+            this.lblProfiel.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblProfiel.Location = new System.Drawing.Point(191, 65);
+            this.lblProfiel.Name = "lblProfiel";
+            this.lblProfiel.Size = new System.Drawing.Size(48, 16);
+            this.lblProfiel.TabIndex = 5;
+            this.lblProfiel.Text = "poepo";
+            this.lblProfiel.Click += new System.EventHandler(this.lblProfiel_Click);
             // 
             // Vandaag
             // 
@@ -223,6 +251,8 @@ namespace MEDU_Application
             this.gbxIngenomen.ResumeLayout(false);
             this.gbxIngenomen.PerformLayout();
             this.navigatiebar.ResumeLayout(false);
+            this.navigatiebar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -246,6 +276,8 @@ namespace MEDU_Application
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblProfiel;
     }
 }
 

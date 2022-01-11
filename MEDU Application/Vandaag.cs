@@ -23,6 +23,7 @@ namespace MEDU_Application
         {
             InitializeComponent();
             this.patient = patient;
+            lblProfiel.Text = patient.ToString();
             lbxTijd.Items.Clear(); // maakt de listbox met datums en tijden leeg
             lbxMedicijn.Items.Clear(); // maakt de listbox met medicijnen leeg 
             reader = GetDataBase.loadSQL("SELECT cast(consumption_date.date as date) as dt_Date, cast(consumption_date.date as TIME) as dt_Time FROM consumption_date WHERE cast(consumption_date.date as date) = CURRENT_DATE AND consumption_date.patient_id =  '" + patient.Id + "';");// deze queryroept de datums op die gekopeld is met de patient id uit de database
@@ -146,6 +147,11 @@ namespace MEDU_Application
             {
                 Console.WriteLine("No rows found.");
             }
+        }
+
+        private void lblProfiel_Click(object sender, EventArgs e)
+        {
+            lblProfiel.Text = patient.ToString();
         }
     }
 }

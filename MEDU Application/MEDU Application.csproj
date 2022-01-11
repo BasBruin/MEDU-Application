@@ -157,5 +157,11 @@
   <ItemGroup>
     <None Include="Resources\Huis_ICON.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MED-U-user-blauw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MED-U-user-wit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

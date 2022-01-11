@@ -21,6 +21,7 @@ namespace MEDU_Application
         {
             InitializeComponent();
             this.patient = patient;
+            lblProfiel.Text = patient.ToString();
             string gekozenDate = monthCalander.SelectionRange.Start.ToString("yyyy'-'MM'-'dd");
 
             reader = GetDataBase.loadSQL("SELECT cast(consumption_date.date as date) as dt_Date, cast(consumption_date.date as TIME) as dt_Time FROM `consumption_date` WHERE cast(consumption_date.date as date) = '" + gekozenDate + "' AND consumption_date.patient_id = '" + patient.Id + "';"); // deze queryroept de datums op die gekopeld is met de patient id uit de database

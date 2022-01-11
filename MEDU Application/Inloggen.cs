@@ -43,6 +43,7 @@ namespace MEDU_Application
                     this.Hide();
                     Vandaag f1 = new Vandaag(patient);
                     f1.ShowDialog();
+                    
                 }
                 else
                 {
